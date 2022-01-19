@@ -22,14 +22,13 @@ m = 4000
 np.random.seed(100)
 # a = np.random.random((n,m))
 # b = np.random.random((n,m))
-# start = time()
+start = time()
 # adotb = a.dot(b.T)
 # meanval = adotb.mean()
-# print(time() - start)
+print(time() - start)
 # print(meanval)
-# st.text(f"Mean value is {meanval}. It took {time()-start} seconds to calculate this.")
 meanval = 0.5
-st.text(f"Mean value is {meanval}")
+st.text(f"Mean value is {meanval}. It took {time()-start} seconds to calculate this.")
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
