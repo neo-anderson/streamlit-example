@@ -17,17 +17,16 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
-n = 30000
-m = 4000
+n = 300
+m = 400
 np.random.seed(100)
-# a = np.random.random((n,m))
-# b = np.random.random((n,m))
+a = np.random.random((n,m))
+b = np.random.random((n,m))
 start = time()
-# adotb = a.dot(b.T)
-# meanval = adotb.mean()
+adotb = a.dot(b.T)
+meanval = adotb.mean()
 print(time() - start)
-# print(meanval)
-meanval = 0.5
+print(meanval)
 st.text(f"Mean value is {meanval}. It took {time()-start} seconds to calculate this.")
 
 with st.echo(code_location='below'):
