@@ -4,6 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 import numpy as np
+import sys
 from time import time
 
 """
@@ -27,6 +28,7 @@ adotb = a.dot(b.T)
 meanval = adotb.mean()
 print(time() - start)
 print(meanval)
+sys.stdout.flush()
 st.text(f"Mean value is {meanval}. It took {time()-start} seconds to calculate this.")
 
 with st.echo(code_location='below'):
