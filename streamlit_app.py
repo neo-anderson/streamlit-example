@@ -17,8 +17,8 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
-n = 30000
-m = 4000
+n = 10000
+m = 10000
 np.random.seed(100)
 a = np.random.random((n,m))
 b = np.random.random((n,m))
