@@ -18,6 +18,17 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
+import platform
+print(platform.processor())
+print(platform.architecture())
+print(platform.machine())
+print(platform.node())
+print(platform.system())
+print(platform.dist())
+
+with open("/proc/cpuinfo", "r")  as f:
+    info = f.readlines()
+
 n = 10000
 m = 4000
 np.random.seed(100)
